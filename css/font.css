@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'nexon';
+    font-weight: 300;
+    src: url(../font/NEXON\ Lv2\ Gothic\ Light.woff) format("woff"),url(../font/NEXON\ Lv2\ Gothic\ Light.ttf) format("ttf")
+}
+
+@font-face {
+    font-family: 'nexon';
+    font-weight: 400;
+    src: url(../font/NEXON\ Lv2\ Gothic.woff) format("woff"),url(../font/NEXON\ Lv2\ Gothic.ttf) format("ttf")
+}
+
+@font-face {
+    font-family: 'nexon';
+    font-weight: 500;
+    src: url(../font/NEXON\ Lv2\ Gothic\ Medium.ttf) format("ttf")
+}
+
+
+@font-face {
+    font-family: 'nexon';
+    font-weight: 700;
+    src: url(../font/NEXON\ Lv2\ Gothic\ Bold.woff) format("woff"),url(../font/NEXON\ Lv2\ Gothic\ Bold.ttf) format("ttf")
+}

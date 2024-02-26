@@ -1,0 +1,189 @@
+@charset "utf-8";
+
+/* 모바일 */
+body{
+    background-color: #eee;
+}
+#header{
+    display: none;
+}
+.back{
+    position: relative;
+    text-align: center;
+    line-height: 30px;
+    border-bottom: 1px solid #ddd;
+    background-color: #fff;
+}
+.back a{
+    position: absolute;
+    top: 0;
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin-left: 5px;
+    margin-right: 10px;
+    text-indent: -9999px;
+}
+.back a::after{
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid #000;
+    border-left: 2px solid #000;
+    transform: rotate(-45deg);
+    margin-top: -20px;
+    margin-left: 5px;
+}
+.login_wrap{
+    margin: 0 auto;
+    margin-bottom: 50px;
+    padding: 1.5vw;
+    box-sizing: border-box;
+}
+.logo{
+    margin-top: 20px;
+    margin-bottom: 15px;
+    background-image: url(../img/header_logo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.logo a{
+    display: block;
+    margin: 0 auto;
+    width: 90px;
+    height: 30px;
+    text-indent: -9999px;
+}
+.login_cate ul{
+    display: flex;
+    justify-content: center;
+}
+.login_cate li{
+    margin: 0 10px;
+    margin-bottom: 20px;
+    color: #777;
+}
+.login_cate li.active{
+    text-decoration: underline;
+    text-underline-position: under;
+    color: #000;
+}
+.nexen_login{
+    display: flex;
+    flex-direction: column;
+}
+.nexen_login input{
+    padding: 15px;
+    font-size: 15px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+}
+.nexen_login input:focus{
+    outline: 2px solid #009DDC;
+}
+.login_check{
+    margin-bottom: 10px;
+}
+.login_check input{
+    margin-top: 3px;
+    margin-right: 7px;
+}
+.login_check span{
+    font-size: 13px;
+    color: #333;
+}
+.btn_login{
+    background-color: #000;
+    padding: 15px;
+    font-size: 15px;
+    font-weight: 600;
+    color: rgba(255,255,255,0.8);
+    margin-bottom: 15px;
+}
+.login_menu{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+.lgm_L a{
+    margin-right: 10px;
+    color: #333;
+}
+.security a{
+    background-color: #009DDC;
+    color: rgba(255,255,255,0.8);
+    font-size: 12px;
+    padding: 5px 10px;
+    border-radius: 50px;
+}
+.sns_login{
+    margin-bottom: 100px;
+}
+.sns_login div{
+    margin-bottom: 10px;
+}
+.sns_login a{
+    display: block;
+    padding: 10px;
+    border: 1px solid rgb(135, 135, 135, 0.5);
+    color: #000;
+}
+.sns_login a>p{
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    text-indent: -9999px;
+    margin-right: 10px;
+    background-image: url(../img/spr.png);
+}
+.login_facebook a>p{
+    background-position: -7px -48px;
+}
+.login_google a>p{
+    background-position: -53px -48px;
+}
+.login_naver a>p{
+    background-position: -99px -47px;
+}
+.login_apple a>p{
+    background-position: -143px -49px;
+}
+
+/* 태블릿 */
+@media screen and (min-width:768px){
+    .login_wrap{
+        margin: 0 27%;
+        margin-bottom: 70px;
+        margin-top: 50px;
+        padding: 0;
+    }
+}
+
+/* PC -1200 */
+@media screen and (min-width:1200px){
+    #header{
+        display: block;
+        display: flex;
+    }
+    .back{
+        display: none;
+    }
+    .login_wrap{
+        margin: 0 34%;
+        margin-bottom: 70px;
+        padding: 0;
+        margin-top: 70px;
+    }
+    .login_wrap .logo{
+        display: none;
+    }
+}
+
+/* PC -1500 */
+@media screen and (min-width:1500px){
+    .login_wrap{
+        margin: 0 38%;
+        margin-top: 70px;
+    }
+}

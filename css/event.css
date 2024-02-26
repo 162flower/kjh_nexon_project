@@ -1,0 +1,316 @@
+@charset "utf-8";
+
+/* 모바일 */
+#header{
+    position: static;
+    margin-bottom: 30px;
+}
+#main{
+    margin-bottom: 130px;
+}
+
+/* 모바일 - 섹션1 */
+.game_select{
+    margin-bottom: 20px;
+}
+.game_select li{
+    text-align: center;
+    line-height: 40px;
+}
+.game_select li a{
+    display: inline-block;
+    padding-right: 10px;
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+}
+.game_select li img{
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+    margin-right: 5px;
+    border-radius: 50px;
+}
+.game_select li:nth-child(n+2){
+    display: none;
+}
+.game_select li a::after{
+    content: "";
+    display: inline-block;
+    vertical-align: top;
+    width: 6px;
+    height: 6px;
+    margin-top: 14px;
+    margin-left: 8px;
+    border-right: 1px solid #000;
+    border-bottom: 1px solid #000;
+    transform: rotate(45deg);
+}
+
+/* 모바일 - 섹션2 */
+.event_cate1{
+    padding: 5px 0;
+}
+.event_cate1 ul{
+    display: flex;
+    justify-content: center;
+}
+.event_cate1 ul li{
+    margin-right: 15px;
+    padding: 5px 15px;
+}
+.event_cate1 ul li a{
+    color: #888;
+}
+.event_cate1 ul li:last-child{
+    margin-right: 0;
+}
+.event_cate1 ul li.on{
+    background-color: #009DDC;
+    border-radius: 50px;
+}
+.event_cate1 ul li.on a{
+    color: #fff;
+}
+
+/* 모바일 섹션3 */
+.event_cate2{
+    margin-bottom: 3vw;
+}
+.event_cate2 ul{
+    display: flex;
+    justify-content: center;
+}
+.event_cate2 ul li{
+    margin-right: 20px;
+    line-height: 35px;
+}
+.event_cate2 ul li:last-child{
+    margin-right: 0;
+}
+.event_cate2 ul li a{
+    color: #888;
+    font-size: 13px;
+}
+.event_cate2 ul li.on a{
+    color: #333;
+    text-decoration: underline;
+    text-underline-position: under;
+}
+
+/* 모바일 섹션4 */
+.ingE_list{
+    width: 100%;
+}
+.ingE_list li{
+    margin-bottom: 3vw;
+}
+.event_title{
+    color: #000;
+    font-size: min(3.5vw, 15px);
+    margin-bottom: 1.5vw;
+}
+.event_txt{
+    color: #000;
+    font-size: min(3vw, 13px);
+    margin-bottom: 1.5vw;
+}
+.event_date{
+    font-size: min(2vw, 11px);
+    color: #777;
+}
+.ingE_list li a{
+    display: flex;
+}
+.ingE_list .event_img{
+    width: 60%;
+}
+.ingE_list .event_img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.event_txtWrap{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 40%;
+    padding: 2vw;
+    background-color: #fff;
+}
+.event_info2{
+    display: flex;
+    align-items: center;
+    padding-top: 2vw;
+    border-top: 1px solid #eee;
+}
+.eGame_name{
+    display: flex;
+    align-items: center;
+    width: 70%;
+    color: #000;
+    font-size: min(2.5vw, 13px);
+    line-height: 1.4em;
+}
+.eGame_name img{
+    width: 20%;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+.event_reward{
+    width: 30%;
+    text-align: end;
+    font-size: min(2.5vw, 13px);
+    color: #000;
+}
+.ingE_list span{
+    padding: 5px 10px;
+    border-radius: 20px;
+    color: #fff;
+}
+.etc{
+    background-color: #aaaaaa;
+}
+.goods{
+    background-color: rgb(122, 190, 145);
+}
+.item{
+    background-color: #009DDC;
+}
+.cash{
+    background-color: #fcb4b4;
+}
+
+/* 모바일 섹션5 */
+.list_wrap{
+    position: relative;
+}
+.close_event{
+    display: none;
+    position: absolute;
+    top: 0;
+}
+
+
+/* 태블릿 */
+@media screen and (min-width:768px){
+    /* 태블릿 - 섹션2 */
+    .event_cate1 ul{
+        justify-content: start;
+        margin-left: 20px;
+    }
+    /* 태블릿 - 섹션3 */
+    .event_cate2 ul{
+        justify-content: start;
+        margin-left: 25px;
+    }
+    /* 태블릿 - 섹션4 */
+    .ingE_list{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .ingE_list li{
+        width: 50%;
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+    .ingE_list li:nth-child(even){
+        padding-left: 10px;
+    }
+    .ingE_list li:nth-child(odd){
+        padding-right: 10px;
+    }
+
+    .ingE_list li a{
+        width: 100%;
+        display: block;
+        box-shadow: 4px 4px 5px rgba(0,0,0,0.1);
+    }
+    .ingE_list .event_img{
+        width: 100%;
+    }
+    .event_date{
+        margin-bottom: 20px;
+    }
+    .event_info2{
+        padding-top: 1vw;
+    }
+    .event_txtWrap{
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+
+
+
+
+/* PC -1200 */
+@media screen and (min-width:1200px){
+    /* pc 1200 - 섹션1 */
+    .game_select li a{
+        font-size: 25px;
+    }
+    .event_cate1 ul li a{
+        font-size: 18px;
+    }
+    /* pc 1200 - 섹션2 */
+    .event_cate1 ul{
+        margin: 0 12.5%;
+        margin-bottom: 15px;
+    }
+    .event_cate1 ul li{
+        padding: 7px 25px;
+    }
+    /* pc 1200 - 섹션3 */
+    .event_cate2 ul{
+        margin: 0 13%;
+    }
+    .event_cate2 ul li a{
+        font-size: 15px;
+    }
+    /* pc 1200 - 섹션4 */
+    .ingE_list{
+        padding: 0 12.5%;
+        box-sizing: border-box;
+        justify-content: space-between;
+    }
+    .ingE_list li{
+        padding: 0;
+    }
+    .ingE_list li .event_img{
+        overflow: hidden;
+    }
+    .ingE_list li .event_img img{
+        transition: 0.3s;
+    }
+    .ingE_list li:hover .event_img img{
+        transform: scale(1.07);
+    }
+    .event_title{
+        font-size: min(3.5vw, 18px);
+    }
+    .event_txt{
+        font-size: min(3vw, 14px);
+    }
+    .event_date{
+        font-size: min(2vw, 12px);
+    }
+    .eGame_name, .event_reward{
+        font-size: min(2.5vw, 15px);
+    }
+}
+
+
+
+/* PC -1500 */
+@media screen and (min-width:1500px){
+    .ingE_list li{
+        width: 30%;
+    }
+    .ingE_list li:nth-child(even){
+        padding-left: 0px;
+    }
+    .ingE_list li:nth-child(odd){
+        padding-right: 0px;
+    }
+}
